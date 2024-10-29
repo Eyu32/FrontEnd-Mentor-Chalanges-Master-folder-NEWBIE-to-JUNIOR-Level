@@ -1,0 +1,128 @@
+:root{
+  --clr-priamry-Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray-hsl: 0, 0%, 59%;
+  --Dark-gray: hsl(var(--Dark-gray-hsl));
+
+  --fs: 18px;
+  --fw-bold: 700;
+  --fw-regular: 400;
+
+  --ff: "Kumbh Sans", sans-serif;
+
+}
+
+
+
+
+/*josh comeau*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+body{
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background: var(--clr-priamry-Dark-cyan);
+    background-image:
+     url(images/bg-pattern-top.svg), 
+     url(images/bg-pattern-bottom.svg);
+    background-position:
+     left -100% top 150%,
+     right -100% bottom 150%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    place-content: center;
+    color: var(--Dark-grayish-blue);
+    font-weight: var(--fw-regular);
+    font-family: var(--ff);
+    font-size: 12px;
+}
+img,
+picture,
+video,
+canvas,
+svg{
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select{
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    overflow-wrap: break-word;
+}
+.profile-card{
+    width: 350px;
+    height: 380px;
+    background: white;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.victor{
+    position: relative;
+    top: -10%;
+    left: 35%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.content{
+    margin-top: -25px;
+    display: grid;
+    gap: 1rem;
+}
+span{
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs);
+}
+.person{
+    font-size: var(--fs);
+}
+.place{
+    margin-top: 2px;
+}
+.reactions{
+    display: flex;
+    justify-content: space-around;
+    border-top: 0.05px solid hsl(var(--Dark-gray-hsl), .3);
+    margin-top: 10px;
+}
+.reaction-value{
+    margin-top: 22px;
+    display: grid;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--Dark-grayish-blue);
+    padding-top: 20px;
+  }
+  .attribution a {
+    color: hsl(0, 0%, 100%);
+  }
