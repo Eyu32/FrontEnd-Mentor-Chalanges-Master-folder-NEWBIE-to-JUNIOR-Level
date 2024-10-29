@@ -1,7 +1,7 @@
 # Frontend Mentor Challenges – Newbie to Junior Level
 Welcome to my Frontend Mentor project collection! Over the past year and a half, I’ve built and improved my frontend development skills by completing challenges ranging from newbie to junior levels. This repository contains each project as I progressed, starting from my early days as a frontend developer to the current point in my journey.
 ## Repository Overview
-Each folder in this repository corresponds to a different challenge from (https://www.frontendmentor.io/)[Frontend Mentor] and reflects my growth in HTML, CSS, and JavaScript. From basic layouts to more complex interactive components, each project showcases specific techniques and tools I’ve learned along the way.
+Each folder in this repository corresponds to a different challenge from [Frontend Mentor]([url](https://www.frontendmentor.io/))  and reflects my growth in HTML, CSS, and JavaScript. From basic layouts to more complex interactive components, each project showcases specific techniques and tools I’ve learned along the way.
 ## Projects
 The following projects are organized by level and difficulty:
 
