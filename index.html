@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="spliter"><span>SPLI</span><span>TTER</span></div>
+  <div class="container">
+    <div class="user-input">
+      <div class="bill input-box">
+        <label for="bill-input" class="titles">Bill</label>
+        <input class="bill-input" type="number" placeholder="0">
+      </div>
+      <div class="select">
+        <p class="titles">Select Tip %</p>
+        <div class="rates">
+          <button class="five-per percent grid" value="5">5%</button>
+          <button class="ten-per percent grid" value="10">10%</button>
+          <button class="fifteen-pe percent grid" value="15">15%</button>
+          <button class="twent-five-per percent grid" value="25">25%</button>
+          <button class="fifty-per percent grid" value="50">50%</button>
+          <input class="custom-tip  grid"  type="number" placeholder="Custom">
+        </div>
+      </div>
+    
+      <div class="input-box">
+        <div class="label-error">
+          <p class="error titles"></p>
+          <label for="num-people" class="titles">Number of People</label>
+        </div>
+        <input class="num-people" type="number" placeholder="0">
+      </div>
+    </div>
+    <div class="result">
+      <div class="displays">
+        <div class="res">
+          <div class="res-block">
+            <p class="titles new-titles">Tip Amount</p>
+            <p class="per">/ person</p>
+          </div>
+          <p class="per-person val">$0.00</p>
+        </div>
+        <div class="res">
+          <div class="res-block">
+            <p class="titles new-titles">Total</p>
+            <p class="per">/ person</p>
+          </div>
+          <p class="total val">$0.00</p>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="calculate">Continue</button>
+        <button class="reset-btn">Reset</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/eyu-birhanu/">Eyu Birhanu</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
