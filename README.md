@@ -5,5 +5,5 @@ Each folder in this repository corresponds to a different challenge from Fronten
 ## Projects
 The following projects are organized by level and difficulty:
 
-+ ** Newbie Projects: ** A series of initial projects that cover fundamental layout structures, responsive design basics, and entry-level JavaScript.
-+ ** Junior Projects: ** More advanced challenges focusing on interactive elements, enhanced JavaScript functionality, and more complex responsive layouts.
++ **Newbie Projects:** A series of initial projects that cover fundamental layout structures, responsive design basics, and entry-level JavaScript.
++ **Junior Projects:** More advanced challenges focusing on interactive elements, enhanced JavaScript functionality, and more complex responsive layouts.
