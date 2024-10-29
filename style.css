@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --assent-purple: hsl(259, 100%, 65%);
+    --assent-Light-red: #ff5757;
+
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: #141414;
+
+    --fs: 4rem;
+
+    --fw-regular: 400;
+    --fw-semi-bold: 700;
+    --fw-bold: 800;
+}
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background: var(--Off-white);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    font-size: .95rem;
+}
+.container{
+    background: var(--White);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem 2.5rem;
+    border-radius: 8px;
+    border-bottom-right-radius: 100px;
+    width: 40vw;
+}
+@media (width < 800px){
+    .container{
+        width: 90%;
+    }
+}
+.user-input{
+    display: flex;
+    gap: 1rem;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+label{
+    color: var(--Smokey-grey);
+    font-weight: var(--fw-semi-bold);
+    letter-spacing: .08rem;
+}
+label.invalid{
+    color: var(--assent-Light-red);
+}
+input{
+    height: 50px;
+    width: 110px;
+    font-size: 1.325rem;
+    font-weight: var(--fw-bold);
+    color: var(--Off-black);
+    outline: 0;
+    padding-left: 5px;
+    border: .1px solid var(--Smokey-grey);
+    border-radius: 6px;
+    border: 1px solid var(--Light-grey);
+}
+@media (width < 1000px){
+    input{
+        width: 80px;
+    }
+}
+input:focus{
+    border: 1px solid var(--Off-black);
+}
+input::placeholder{
+    color: var(--Light-grey);
+}
+
+
+.res-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    border-top: .01px solid var(--Light-grey);
+
+    font-size: clamp(2.6rem ,6vw ,var(--fs));
+    font-style: italic;
+    font-weight: var(--fw-bold);
+    position: relative;
+}
+@media (width < 800px){
+    .res-box{
+        padding-top: 50px;
+    }
+}
+button{
+    width: fit-content;
+    padding: .8rem;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    background: var(--assent-purple);
+    position: absolute;
+    top: -35px;
+    right: 0;
+    cursor: pointer;
+    transition: 150ms;
+}
+@media (width < 800px){
+    button{
+        left: 50%;
+    }
+}
+
+button:hover{
+    background: var(--Off-black);
+}
+.val{
+    color: var(--assent-purple);
+}
+
+
+.error-msg{
+    font-size: clamp(8px, 5vw , 10px);
+    color: var(--assent-Light-red);
+    font-style: italic;
+}
+.error{
+    border: 1px solid var(--assent-Light-red);
+}
+
+
+.attribution { font-size: 11px; text-align: center; padding-top: 20px;}
+.attribution a { color: hsl(228, 45%, 44%); }
