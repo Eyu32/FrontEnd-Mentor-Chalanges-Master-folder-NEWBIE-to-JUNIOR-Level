@@ -1,0 +1,203 @@
+:root{
+    --clr-Very-Light-Grayish-Blue: hsl(var(--clr-Very-Light-Grayish-Blue-hsl));
+    --clr-Very-Light-Grayish-Blue-hsl: 240, 78%, 98%;
+    --clr-Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --clr-Grayish-Blue: hsl(var(--clr-Grayish-Blue-hsl));
+    --clr-Grayish-Blue-hsl: 233, 13%, 49%;
+    --clr-Dark-Grayish-Blue: hsl(232, 13%, 33%);
+
+    --clr-Linear-Gradient: linear-gradient( hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
+    --clr-white: hsl(var(--clr-white-hsl));
+    --clr-white-hsl: 0, 0%, 100%;
+
+    --fs: 15px;
+    --fw: 700;
+    --ff: "Montserrat" , sans-serif; 
+}
+
+/*josh comeau reset*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg{
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select{
+    font: inherit;
+}
+body{
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--ff);
+    font-size: var(--fs);
+    font-weight: var(--fw);
+    background: var(--clr-Very-Light-Grayish-Blue);
+    
+    color: hsl(var(--clr-Grayish-Blue-hsl), .8);
+    background-image: url(images/bg-top.svg) ,url(images/bg-bottom.svg);
+    background-position: right top,left bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+@media (min-width: 800px){
+    html,
+    body{
+        height: 100%;
+    }
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+h1{
+    font-size: 25px;
+    color: var(--clr-Grayish-Blue);
+}
+.toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height:22px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--clr-Linear-Gradient);
+    transition: .4s;
+    border-radius: 50px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 20px;
+    top: 1px;
+    transition: .4s;
+    background-color: var(--clr-white);
+    border-radius: 50%;
+}
+input:checked + .slider:before {
+      transform: translateX(-14px);
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    border-radius: 8px;
+}
+@media (min-width: 800px){
+    .cards{
+        background: var(--clr-white);
+        flex-direction: row;
+        gap: 0rem;
+    }
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.4rem;
+    border-radius: 5px;
+    justify-content: center;
+    color: var(--clr-Grayish-Blue);
+    background: var(--clr-white);
+}
+@media (min-width: 800px){
+    .card{
+        background: transparent;
+        border-radius: 0px;
+    }
+}
+.professional-card{
+    margin-block: -1rem;
+    background: var(--clr-Linear-Gradient);
+    color: var(--clr-white);
+    border-radius: 5px;
+}
+.title{
+    font-size: 18px;
+    font-weight: var(--fw);
+    color: var(--clr-Grayish-Blue);
+}
+.professional{
+    color: var(--clr-white);
+}
+.pricing{
+    font-size: 36px;
+    color: var(--clr-Dark-Grayish-Blue);
+}
+.professional-pricing{
+    color: var(--clr-white);
+}
+.p{
+    font-size: var(--fs);
+    border-top: .01px solid hsl(var(--clr-Grayish-Blue-hsl), .5);
+    padding: .6rem;
+    padding-inline: 3.2rem;
+}
+.allowed-sharing{
+    border-bottom: .01px solid hsl(var(--clr-Grayish-Blue-hsl), .5);
+}
+.professional-detail{
+    border-color: hsl(var(--clr-white-hsl), .5);
+}
+.btn{
+    outline: 0;
+    border: 0;
+    height: 35px;
+    border-radius: 5px;
+    background: var(--clr-Linear-Gradient);
+    color: var(--clr-white);
+    cursor: pointer;
+
+}
+.professional-btn{
+    background: var(--clr-white);
+    color: var(--clr-Grayish-Blue);
+}
+.attribution {
+    padding-top: 2rem;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(240, 2%, 12%);
+}
