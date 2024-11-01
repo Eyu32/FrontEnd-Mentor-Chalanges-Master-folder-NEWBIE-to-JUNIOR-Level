@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [here]([url](https://github.com/Eyu32/Frontend-mentor-chalanges_Master/tree/sunnyside-agency-landing-page-main))
+- Live Site URL: [here]([url](https://sunnyside-agency-landing-page-eyu.netlify.app/))
 
 ## My process
 
